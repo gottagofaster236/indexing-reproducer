@@ -1,4 +1,6 @@
-java_library(
+load("@rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
+
+kt_jvm_library(
     name = "example",
-    srcs = ["Main.java"],
+    srcs = glob(["*.kt", "*.java"]),
 )
